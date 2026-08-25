@@ -1,6 +1,11 @@
-from utils import square, is_even, celsius_to_fahrenheit
+from utils import square, is_even, celsius_to_fahrenheit, greet
 
 def main():
+    # Ask for a name first
+    user_name = input("Enter your name: ")
+    print(greet(user_name))
+    print("-" * 30)
+
     try:
         user_input = float(input("Enter a number: "))
         
